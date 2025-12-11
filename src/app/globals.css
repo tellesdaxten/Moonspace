@@ -1,0 +1,278 @@
+/* Updated: 2025-12-11T02:32:10.953Z */
+/* Updated: 2025-12-11T02:30:25.190Z */
+/* Updated: 2025-12-11T02:27:49.272Z */
+/* Updated: 2025-12-11T02:26:46.640Z */
+/* Updated: 2025-12-10T17:54:19.705Z */
+/* Updated: 2025-12-10T17:32:52.410Z */
+/* Updated: 2025-12-10T17:12:20.926Z */
+/* Updated: 2025-12-06T00:33:36.732Z */
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap');
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-pixel: 'VT323', monospace;
+  --font-pixel-title: 'Press Start 2P', cursive;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+}
+
+:root {
+  --radius: 0px;
+  --background: oklch(0.08 0.03 280);
+  --foreground: oklch(0.95 0.02 280);
+  --card: oklch(0.12 0.03 280);
+  --card-foreground: oklch(0.95 0.02 280);
+  --popover: oklch(0.12 0.03 280);
+  --popover-foreground: oklch(0.95 0.02 280);
+  --primary: oklch(0.65 0.28 295);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.55 0.24 320);
+  --secondary-foreground: oklch(0.99 0 0);
+  --muted: oklch(0.16 0.02 280);
+  --muted-foreground: oklch(0.65 0.02 280);
+  --accent: oklch(0.6 0.26 310);
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.35 0.12 295);
+  --input: oklch(0.2 0.04 280);
+  --ring: oklch(0.65 0.28 295);
+  --chart-1: oklch(0.65 0.28 295);
+  --chart-2: oklch(0.55 0.24 320);
+  --chart-3: oklch(0.6 0.26 310);
+  --chart-4: oklch(0.5 0.28 300);
+  --chart-5: oklch(0.7 0.22 330);
+  --sidebar: oklch(0.1 0.03 280);
+  --sidebar-foreground: oklch(0.95 0.02 280);
+  --sidebar-primary: oklch(0.65 0.28 295);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.16 0.02 280);
+  --sidebar-accent-foreground: oklch(0.95 0.02 280);
+  --sidebar-border: oklch(0.35 0.12 295);
+  --sidebar-ring: oklch(0.65 0.28 295);
+}
+
+.dark {
+  --background: oklch(0.08 0.03 280);
+  --foreground: oklch(0.95 0.02 280);
+  --card: oklch(0.12 0.03 280);
+  --card-foreground: oklch(0.95 0.02 280);
+  --popover: oklch(0.12 0.03 280);
+  --popover-foreground: oklch(0.95 0.02 280);
+  --primary: oklch(0.65 0.28 295);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.55 0.24 320);
+  --secondary-foreground: oklch(0.99 0 0);
+  --muted: oklch(0.16 0.02 280);
+  --muted-foreground: oklch(0.65 0.02 280);
+  --accent: oklch(0.6 0.26 310);
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(0.35 0.12 295);
+  --input: oklch(0.2 0.04 280);
+  --ring: oklch(0.65 0.28 295);
+  --chart-1: oklch(0.65 0.28 295);
+  --chart-2: oklch(0.55 0.24 320);
+  --chart-3: oklch(0.6 0.26 310);
+  --chart-4: oklch(0.5 0.28 300);
+  --chart-5: oklch(0.7 0.22 330);
+  --sidebar: oklch(0.1 0.03 280);
+  --sidebar-foreground: oklch(0.95 0.02 280);
+  --sidebar-primary: oklch(0.65 0.28 295);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.16 0.02 280);
+  --sidebar-accent-foreground: oklch(0.95 0.02 280);
+  --sidebar-border: oklch(0.35 0.12 295);
+  --sidebar-ring: oklch(0.65 0.28 295);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    image-rendering: pixelated;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: -1px;
+    line-height: 1.6;
+  }
+  
+  .gradient-purple-pink {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .moon-glow {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5), 0 0 40px rgba(168, 85, 247, 0.3);
+  }
+
+  .pixel-border {
+    border: 4px solid var(--border);
+    box-shadow: 
+      4px 4px 0px var(--border),
+      inset -4px -4px 0px rgba(0,0,0,0.2);
+  }
+
+  .pixel-btn {
+    border: 4px solid;
+    border-color: var(--color-primary);
+    box-shadow: 4px 4px 0px var(--color-primary);
+    transition: all 0.1s ease;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .pixel-btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--color-primary);
+  }
+
+  .pixel-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px var(--color-primary);
+  }
+
+  .pixel-card {
+    border: 4px solid var(--border);
+    box-shadow: 
+      8px 8px 0px rgba(168, 85, 247, 0.3),
+      inset 0 0 0 2px rgba(168, 85, 247, 0.1);
+    background: var(--card);
+  }
+
+  .pixel-input {
+    border: 3px solid var(--border);
+    background: var(--input);
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+  }
+
+  .pixel-avatar {
+    border: 3px solid var(--border);
+    image-rendering: pixelated;
+  }
+
+  .scanlines {
+    position: relative;
+  }
+
+  .scanlines::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+  }
+
+  .pixel-text {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .pixel-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .blink {
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .pixel-stars {
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, #a855f7, transparent),
+      radial-gradient(2px 2px at 40px 70px, #d946ef, transparent),
+      radial-gradient(2px 2px at 50px 160px, #a855f7, transparent),
+      radial-gradient(2px 2px at 90px 40px, #d946ef, transparent),
+      radial-gradient(2px 2px at 130px 80px, #a855f7, transparent),
+      radial-gradient(2px 2px at 160px 120px, #d946ef, transparent),
+      radial-gradient(1px 1px at 180px 20px, #a855f7, transparent),
+      radial-gradient(1px 1px at 200px 150px, #d946ef, transparent),
+      radial-gradient(1px 1px at 250px 50px, #a855f7, transparent),
+      radial-gradient(1px 1px at 280px 100px, #d946ef, transparent);
+    background-repeat: repeat;
+    background-size: 300px 200px;
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
